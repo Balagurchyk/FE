@@ -9,7 +9,7 @@ let products = [
 
 function most_expensive_product(products) {
     let big_price = products[0].price_usd;
-    let exp_product = products[n].title;
+    let exp_product = products[0].title;
 	for (let n = 1; n < products.length; n++) {
 		if (products[n].price_usd > big_price) {
             big_price = products[n].price_usd;
@@ -18,7 +18,6 @@ function most_expensive_product(products) {
 	}
     return console.log(`Самый дорогой товар ${exp_product} стоит ${big_price} USD`);
 }
-
 most_expensive_product(products);
 
 //---------------------------------------------------------------------------------------
