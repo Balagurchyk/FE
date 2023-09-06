@@ -3,18 +3,18 @@
 
 
 let products = [
-	{title: 'Product 1', price_usd: 500},
-	{title: 'Product 2', price_usd: 600},
-	{title: 'Product 3', price_usd: 700}
-    ];
+  { title: "Product 1", price_usd: 500 },
+  { title: "Product 2", price_usd: 600 },
+  { title: "Product 3", price_usd: 700 },
+];
 function average_price(products) {
-    let sum = 0;
-    let average_cost;
-      for (let n = 0; n < products.length; n++) {
-          sum += products[n].price_usd;
-          average_cost = sum / products.length;
-      }
-     return console.log(`Средняя стоимость равна ${average_cost} USD`);
+  let sum = 0;
+  let average_cost;
+  for (let n = 0; n < products.length; n++) {
+    sum += products[n].price_usd;
+    average_cost = sum / products.length;
+  }
+  return console.log(`Средняя стоимость равна ${average_cost} USD`);
 }
 average_price(products);
 
